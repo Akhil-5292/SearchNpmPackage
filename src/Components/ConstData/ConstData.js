@@ -1,0 +1,32 @@
+export const npmPackage=[{
+    id:1,
+    npm:'react'
+},
+{
+    id:2,
+    npm:'react-router-dom'
+},
+{
+    id:3,
+    npm:'recoil'
+},
+{
+    id:4,
+    npm:'Reactjs'
+},
+{
+    id:5,
+    npm:'rechart'
+},
+{
+    id:6,
+    npm:'react-native-elements'
+},
+{
+    id:7,
+    npm:'redux'
+},
+{
+    id:8,
+    npm:'contextApi'
+}]

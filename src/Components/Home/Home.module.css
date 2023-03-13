@@ -1,0 +1,49 @@
+.wrapper{
+    border: 1px solid;
+    height: 100vh;
+    background-color: rgba(255, 252, 101, 0.595);
+}
+
+.input{
+    height: 4vh;
+    width: 30vw;
+    margin-top: 5vh;
+    font-weight: 700;
+}
+
+textarea {
+    width: 30vw;
+    height: 10vh;
+    margin: 1rem;
+    padding: 2rem;
+  }
+
+.btn{
+    width: 7vw;
+    margin-left: 40%;
+    background-color: rgb(246, 101, 101);
+    color: white;
+    border: none;
+    margin: 1rem;
+    height: 1.5rem;
+    border-radius: 3px;
+  }
+
+.heading {
+    display: flex;
+    margin-left: 11vh;
+    font-size: large;
+    font-weight: 600;
+    word-spacing: 7px;
+   
+  }
+  .label {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  
+  }
+  

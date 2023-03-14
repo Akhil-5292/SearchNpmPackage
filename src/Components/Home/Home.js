@@ -3,7 +3,7 @@ import Input from "../Input/Input";
 import style from './Home.module.css'
 import { npmPackage } from "../ConstData/ConstData";
 export default function Home(){
-  const[npm,setNpm]=useState([])  
+  const[npm,setNpm]=useState(npmPackage)  
   const[search,setSearch]=('')
   const[text,setText]=useState('')
   
@@ -18,6 +18,9 @@ export default function Home(){
    
   }
 
+  const filteredListItems = npm.filter(
+    item => item.toLowerCase().includes(search.toLowerCase())
+  );
 
     return(
         <div className={style.wrapper}>
@@ -25,12 +28,13 @@ export default function Home(){
          className={style.input}
          onChange={handleChange}
          text='Type to search...'
-         value={search}/>
+         value={search}
+         type='text'/>
 
          <div>
-         {npmPackage.map((x)=>{
+         {filteredListItems.map((item)=>{
           return(
-            <div>{x.npm}</div>
+            <div>{item.npm}</div>
           )
          })}
          </div>
